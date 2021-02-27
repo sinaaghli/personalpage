@@ -70,7 +70,7 @@ language = None
 exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'monokai'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -183,3 +183,31 @@ epub_exclude_files = ['search.html']
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
+
+# -- Sina's custom Options
+
+# hide the "view source" from each page's top-right corner
+html_show_sourcelink = False
+
+html_theme_options = {
+    # 'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
+    # 'analytics_anonymize_ip': False,
+    # 'logo_only': True,
+    'display_version': True,
+    # 'prev_next_buttons_location': 'bottom',
+    'style_external_links': True,
+    'vcs_pageview_mode': 'blobs',
+    # 'style_nav_header_background': 'white',
+    # Toc options
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
+
+html_css_files = ['custom.css'
+]
+# html_js_files = ['bigblow/js/bigblow.js',
+#     'bigblow/js/hideshow.js'
+# ]
