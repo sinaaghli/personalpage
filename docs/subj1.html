@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
 
   
   
@@ -120,7 +121,7 @@
 
       <div class="wy-nav-content">
         
-        <div class="rst-content">
+        <div class="rst-content style-external-links">
         
           
 
@@ -151,8 +152,6 @@
     
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/subj1.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -188,7 +187,7 @@
 </div>
 <div class="section" id="here-is-a-title1">
 <h1>here is a title1<a class="headerlink" href="#here-is-a-title1" title="Permalink to this headline">¶</a></h1>
-<p>some text</p>
+<p>some text with <code class="code codecpp cpp docutils literal notranslate"><span class="keyword type"><span class="pre">int</span></span> <span class="name"><span class="pre">result</span></span> <span class="operator"><span class="pre">=</span></span> <span class="punctuation"><span class="pre">(</span></span><span class="literal number integer"><span class="pre">1</span></span>&#160; <span class="operator"><span class="pre">+</span></span> <span class="name"><span class="pre">x</span></span><span class="punctuation"><span class="pre">)</span></span> <span class="operator"><span class="pre">*</span></span> <span class="literal number integer"><span class="pre">32</span></span><span class="punctuation"><span class="pre">;</span></span></code> some code in it</p>
 <div class="section" id="here-is-title2">
 <h2>here is title2<a class="headerlink" href="#here-is-title2" title="Permalink to this headline">¶</a></h2>
 <p>some text</p>
@@ -218,6 +217,11 @@
 </span><span class="p">}</span>
 </pre></div>
 </td></tr></table></div>
+</div>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Zero-copy provision with custom deallocation callback.</span>
+<span class="c1">// Wraps zmq_msg_init_data(3), see man page for details.</span>
+<span class="n">zmq</span><span class="o">::</span><span class="n">message_t</span> <span class="n">msg</span><span class="p">(</span><span class="n">byte</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">myfree</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+</pre></div>
 </div>
 <p>Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text .
 where it still continues</p>

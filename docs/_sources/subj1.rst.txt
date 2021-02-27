@@ -21,12 +21,16 @@ here is a title0
 here is a title1
 =================
 
-some text
+.. role:: codecpp(code)
+   :language: cpp
+
+some text with :codecpp:`int result = (1  + x) * 32;` some code in it
 
 here is title2
 ---------------
 
 some text
+ 
 
 here is title3
 ~~~~~~~~~~~~~~~
@@ -60,6 +64,11 @@ some text
       return true;
    }
 
+.. code-block:: cpp
+   
+   // Zero-copy provision with custom deallocation callback.
+   // Wraps zmq_msg_init_data(3), see man page for details.
+   zmq::message_t msg(byte, size, myfree, nullptr);
 
 Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text .
 where it still continues
