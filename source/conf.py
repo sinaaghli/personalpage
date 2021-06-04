@@ -19,12 +19,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u'piwheels'
+project = u'Sina\'s Personal Page'
 copyright = u'2021, Sina Aghli'
 author = u'Sina Aghli'
 
 # The short X.Y version
-version = u''
+version = u'1.0'
 # The full version, including alpha/beta/rc tags
 release = u''
 
@@ -105,7 +105,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'piwheelsdoc'
+htmlhelp_basename = 'SinaPersonalPage'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -131,20 +131,20 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'piwheels.tex', u'piwheels Documentation',
-     u'Sina Aghli', 'manual'),
-]
+# latex_documents = [
+#     (master_doc, 'sinapersonalpage.tex', u'sina\'s Personal page',
+#      u'Sina Aghli', 'manual'),
+# ]
 
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'piwheels', u'piwheels Documentation',
-     [author], 1)
-]
+# man_pages = [
+#     (master_doc, 'sinapersonalpage', u'sina\'s personal page',
+#      [author], 1)
+# ]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -152,11 +152,11 @@ man_pages = [
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'piwheels', u'piwheels Documentation',
-     author, 'piwheels', 'One line description of project.',
-     'Miscellaneous'),
-]
+# texinfo_documents = [
+#     (master_doc, 'piwheels', u'piwheels Documentation',
+#      author, 'piwheels', 'One line description of project.',
+#      'Miscellaneous'),
+# ]
 
 
 # -- Options for Epub output -------------------------------------------------
