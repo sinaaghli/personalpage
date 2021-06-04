@@ -7,12 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>here is a title0 &mdash; piwheels  documentation</title>
+  <title>here is a title0 &mdash; Sina&#39;s Personal Page  documentation</title>
   
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
 
   
@@ -30,6 +32,7 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
@@ -39,7 +42,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to piwheels’s documentation!" href="index.html" /> 
+    <link rel="prev" title="CV" href="cv.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -53,7 +56,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> piwheels
+            <a href="index.html" class="icon icon-home"> Sina's Personal Page
           
 
           
@@ -61,6 +64,10 @@
 
           
             
+            
+              <div class="version">
+                1.0
+              </div>
             
           
 
@@ -84,8 +91,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="projects-index.html">Projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="projects/project1.html">My First Project title</a></li>
+<li class="toctree-l2"><a class="reference internal" href="projects/project2.html">My Second Project title</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pubs.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cv.html">CV</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">here is a title0</a><ul class="simple">
 </ul>
 </li>
@@ -114,7 +127,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">piwheels</a>
+          <a href="index.html">Sina's Personal Page</a>
         
       </nav>
 
@@ -198,29 +211,24 @@
 <h4>here is title4<a class="headerlink" href="#here-is-title4" title="Permalink to this headline">¶</a></h4>
 <p>some text</p>
 <div class="math">
-<p><img src="_images/math/c569036fc5d6617fcb6a4aded9103943dc791b29.png" alt="\begin{eqnarray}
+<p><span class="math">\begin{eqnarray}
    y    &amp; = &amp; ax^2 + bx + c \\
    f(x) &amp; = &amp; x^2 + 2xy + y^2
-\end{eqnarray}"/></p>
+\end{eqnarray}</span></p>
 </div><div class="literal-block-wrapper docutils container" id="here-is-a-name">
 <div class="code-block-caption"><span class="caption-text">code.cpp</span><a class="headerlink" href="#here-is-a-name" title="Permalink to this code">¶</a></div>
-<div class="highlight-cpp notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kt">bool</span> <span class="n">NetDriverServer</span><span class="o">::</span><span class="n">BindUDPMulticast</span><span class="p">(){</span>
-   <span class="n">std</span><span class="o">::</span><span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lk</span><span class="p">(</span><span class="n">udp_mutex_</span><span class="p">);</span>
-<span class="hll">   <span class="n">udp_socket_</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">ds</span><span class="o">::</span><span class="n">UDP_MULTICAST_IP</span><span class="o">+</span><span class="n">ds</span><span class="o">::</span><span class="n">UDP_PORT</span><span class="p">);</span>
-</span>   <span class="n">udp_socket_</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ds</span><span class="o">::</span><span class="n">UDP_GROUP</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
-<span class="hll">   <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
-</span><span class="p">}</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">bool</span> <span class="nf">NetDriverServer::BindUDPMulticast</span><span class="p">(){</span>
+<span class="linenos">2</span>   <span class="n">std</span><span class="o">::</span><span class="n">lock_guard</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">mutex</span><span class="o">&gt;</span> <span class="n">lk</span><span class="p">(</span><span class="n">udp_mutex_</span><span class="p">);</span>
+<span class="hll"><span class="linenos">3</span>   <span class="n">udp_socket_</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">ds</span><span class="o">::</span><span class="n">UDP_MULTICAST_IP</span><span class="o">+</span><span class="n">ds</span><span class="o">::</span><span class="n">UDP_PORT</span><span class="p">);</span>
+</span><span class="linenos">4</span>   <span class="n">udp_socket_</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">ds</span><span class="o">::</span><span class="n">UDP_GROUP</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<span class="hll"><span class="linenos">5</span>   <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
+</span><span class="linenos">6</span><span class="p">}</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 </div>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Zero-copy provision with custom deallocation callback.</span>
 <span class="c1">// Wraps zmq_msg_init_data(3), see man page for details.</span>
-<span class="n">zmq</span><span class="o">::</span><span class="n">message_t</span> <span class="n">msg</span><span class="p">(</span><span class="n">byte</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">myfree</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+<span class="n">zmq</span><span class="o">::</span><span class="n">message_t</span> <span class="nf">msg</span><span class="p">(</span><span class="n">byte</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">myfree</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
 </pre></div>
 </div>
 <p>Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text Here is a paragraph of text .
@@ -286,7 +294,7 @@ item uses two lines.</p></li>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to piwheels’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="cv.html" class="btn btn-neutral float-left" title="CV" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

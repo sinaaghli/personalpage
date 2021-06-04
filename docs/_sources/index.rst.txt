@@ -1,20 +1,10 @@
-.. piwheels documentation master file, created by
-   sphinx-quickstart on Wed Feb 24 01:12:02 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to piwheels's documentation!
+Home
 ====================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
+   :maxdepth: 1
+   
+   projects-index
+   pubs
+   cv
    subj1
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
