@@ -17,14 +17,7 @@ here is a title0
    * displayed
    * horizontally
 
-
-here is a title1
-=================
-
-.. role:: codecpp(code)
-   :language: cpp
-
-some text with :codecpp:`int result = (1  + x) * 32;` some code in it
+some text with :code:`int result = (1  + x) * 32;` some code in it
 
 here is title2
 ---------------
