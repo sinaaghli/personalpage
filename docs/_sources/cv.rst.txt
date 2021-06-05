@@ -1,4 +1,19 @@
 CV
 ==============
 
-download a copy of my cv :download:`Here <CV_SinaAghli.pdf>`.
+.. code-block:: cpp
+   :linenos:
+   :emphasize-lines: 3,6
+   
+   bool ShouldIGetTheCV(){
+      if(Picture==ThousandWords && Video==MillionWords){ 
+        GoToProjectsPage();
+        return false;
+      } else {
+        ClickDownloadPDF();
+        return true;
+      }
+   }
+
+
+:download:`DownloadPDF<SinaAghliCV.pdf>`
