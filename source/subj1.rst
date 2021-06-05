@@ -118,7 +118,6 @@ This is a normal text paragraph again.
 
 This is a paragraph that contains `a link`_.
 
-.. image:: imgs/img.png
 
 .. this is a comment
 

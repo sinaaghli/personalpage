@@ -1,4 +1,4 @@
-Rocker Bogie Platform Dummy Test (2017)
+Rocker Bogie Platform Dummy Test
 ==================================
 
 .. raw:: html
