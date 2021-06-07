@@ -1,0 +1,259 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Dynamic Modeling of AWD CAR &mdash; Sina&#39;s Personal Page  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Car PID Controller" href="proj-phd-carpid.html" />
+    <link rel="prev" title="Physics Engine" href="proj-phd-bullet.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Sina's Personal Page
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../projects.html">Projects</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="proj-pphd-adaptivecontrol.html">Adaptive Control of Differential Wheeled Robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-bldcfoc.html">FoC controller for BLDC motor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-bullet.html">Physics Engine</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dynamic Modeling of AWD CAR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-carpid.html">Car PID Controller</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-controlfunnelfunc.html">Path-Following Through Funnel Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-eqmanifold.html">Equilibrium Analysis of Vehicle Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-hydraulics.html">Hydraulics Actuated Car</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-mpc.html">Model Predictive Control with Physics Engine in the loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-parkour.html">Parkour Car: An Autonomous car Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-rockerbogie.html">Rocker Bogie Platform Dummy Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-selfdriving.html">Self Driving Car Hardware/Firmware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-shootingMPC.html">Shooting MPC on Parkour Car</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-slam.html">SLAM on Parkour Car</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-phd-sysIDcalib.html">Online Parameter Estimation (for adaptive MPC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-ms-parallelcable.html">Parallel Cable Manipulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-ms-pipeinsp.html">An IP67 Sewer/Water Pipe inspection robot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-bsc-pistachio.html">Vision based Pistachio classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="proj-bsc-soccerbot.html">Holonomic Drive Robot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pubs.html">Publications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cv.html">CV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../achievements.html">Honors</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Sina's Personal Page</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../projects.html">Projects</a> &raquo;</li>
+        
+      <li>Dynamic Modeling of AWD CAR</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="dynamic-modeling-of-awd-car">
+<h1>Dynamic Modeling of AWD CAR<a class="headerlink" href="#dynamic-modeling-of-awd-car" title="Permalink to this headline">¶</a></h1>
+<p>I am fascinated by Bond-Graphs and how capable they are, They are a graph representation of dynamics/kinematics and they work for electrical, mechanical and even chemical systems.</p>
+<p>if you are familiar with mass-spring-damper system dynamics, this is how a bond graph for that system looks like,</p>
+<a class="reference internal image-reference" href="../_images/bond-spring.png"><img alt="../_images/bond-spring.png" class="align-center" src="../_images/bond-spring.png" style="width: 600px;" /></a>
+<p>very simple right? one connection node in the middle and four other elements.</p>
+<p>I used similar techniques to extract a detailed model for an all wheel drive car, the graph looks like</p>
+<a class="reference internal image-reference" href="../_images/bond-car.png"><img alt="../_images/bond-car.png" class="align-center" src="../_images/bond-car.png" style="width: 600px;" /></a>
+<p>and lateral and longitudinal friction models can be drawn as (based on stribeck friction model)</p>
+<a class="reference internal image-reference" href="../_images/bond-tire.png"><img alt="../_images/bond-tire.png" class="align-center" src="../_images/bond-tire.png" style="width: 600px;" /></a>
+<p>and eventually you can use a software package to convert the graph to analytical equations (I used 20Sim). one could simpy write a solver themselves.</p>
+<a class="reference internal image-reference" href="../_images/bond-ode.png"><img alt="../_images/bond-ode.png" class="align-center" src="../_images/bond-ode.png" style="width: 600px;" /></a>
+<p>Runnig some simulations of this ODE gives reasonable trajectories for the vehicle. Here is a simulation of one equilibrium point on the equilibrium manifold</p>
+<a class="reference internal image-reference" href="../_images/bond-equi.png"><img alt="../_images/bond-equi.png" class="align-center" src="../_images/bond-equi.png" style="width: 600px;" /></a>
+<p>I calculated some slices of equilibrium manifold for using linear and non-linear tire model</p>
+<a class="reference internal image-reference" href="../_images/slice1.png"><img alt="../_images/slice1.png" class="align-center" src="../_images/slice1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/slice2.png"><img alt="../_images/slice2.png" class="align-center" src="../_images/slice2.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/slice3.png"><img alt="../_images/slice3.png" class="align-center" src="../_images/slice3.png" style="width: 600px;" /></a>
+<p>results were consistend with <a class="reference external" href="https://arxiv.org/pdf/1112.1530.pdf">this paper</a></p>
+<a class="reference internal image-reference" href="../_images/slice-comp.png"><img alt="../_images/slice-comp.png" class="align-center" src="../_images/slice-comp.png" style="width: 600px;" /></a>
+<p>You can find a c++ implementation of mentione ODE <a class="reference external" href="https://github.com/arpg/spirit/blob/feature/rk4/include/spirit/CarODE.h">here</a></p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="proj-phd-carpid.html" class="btn btn-neutral float-right" title="Car PID Controller" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="proj-phd-bullet.html" class="btn btn-neutral float-left" title="Physics Engine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Sina Aghli.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
