@@ -1,0 +1,16 @@
+FoC controller for BLDC motor
+==============================
+Field Oriented Controller for brushless dc motor (for Parkour Car Project)
+
+.. image:: ../media/uconstruction.jpeg
+    :width: 400
+    :align: center
+
+The final PCB was very stable, even if motor was changing direction at high speed (step change) it would still be handle all noise from the motor.
+
+Actually the tracks on the PCB would heat up during step direction change which you can see in the following video
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eAwPL0m98Go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+

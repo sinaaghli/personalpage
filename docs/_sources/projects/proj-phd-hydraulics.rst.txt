@@ -1,0 +1,27 @@
+Hydraulics Actuated Car
+========================
+Our research group at ARPG lab at CU Boulder won a grant from DARPA where we got funding to design a car with hydraulic suspensions. The idea was that vehicle not only would be able to adapt to the terrain while driving but it can also apply force to the wheels to get over larger obstacles.
+
+As the main researcher in this project at the time I designed PCB, firmware and software drivers to interact with the robot. I eventually ran my MPC project with this robot but unfortunetly didn't get the chance to incorporate the hydraulic actuators in my model due to lack of time.
+
+Moog designed our custom titanium hydraulic actuators for this project which was both really fun to work with and messy at times. One lession I learned from this project is that hydraulics based actuators need constant maintenance.
+
+.. warning::
+    Apologies, Some of the following videos are very laud.
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/drsi3rgckQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+.. raw:: html
+    
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/jKg_IxXF8yM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+.. note::
+    following experiment was done by engineers who designed the hydraulic actuators
+ 
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7AUFrKYp-Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,0 +1,8 @@
+Equilibrium Analysis of Vehicle Dynamics
+=========================================
+
+From last chapter of my thesis
+
+.. image:: ../media/uconstruction.jpeg
+    :width: 400
+    :align: center
