@@ -34,4 +34,4 @@ Runnig some simulations of this ODE gives reasonable trajectories for the vehicl
     :width: 600
     :align: center
 
-You can find a c++ implementation of mentione ODE `here <https://github.com/arpg/spirit/blob/feature/rk4/include/spirit/CarODE.h>`_
+You can find a c++ implementation of mentione ODE `here <https://github.com/sinaaghli/spirit/blob/feature/rk4/include/spirit/CarODE.h>`_

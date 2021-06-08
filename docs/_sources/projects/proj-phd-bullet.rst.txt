@@ -3,7 +3,7 @@ Physics Engine
 
 As a part of my PhD I was developing wrapper around bullet physics engine 
 which was capable of instanciating robots in a given initial state and simulate them forward in time very quickly.
-The repository is in `Spirit Repo <https://github.com/arpg/spirit>`_
+The repository is in `Spirit Repo <https://github.com/sinaaghli/spirit>`_
 
 Some of the features are
 

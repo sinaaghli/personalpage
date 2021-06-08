@@ -1,6 +1,6 @@
 Model Predictive Control with Physics Engine in the loop
 ========================================================
-The repo for this work can be found in `Here <https://github.com/arpg/spirit>`_
+The repo for this work can be found in `Here <https://github.com/sinaaghli/spirit>`_
 
 Here I have a high-level explanation of the method but you can find more details in my PhD thesis.
 
