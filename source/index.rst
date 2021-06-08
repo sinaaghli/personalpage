@@ -1,7 +1,7 @@
 Sina Aghli Ph.D.
 =================
 
-.. image:: media/prof-rori.jpeg
+.. image:: media/sina-prof1.png
   :width: 150
   :alt: Profile Picture Here
   :align: right
