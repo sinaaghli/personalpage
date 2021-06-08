@@ -186,9 +186,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="equilibrium-analysis-of-vehicle-dynamics">
-<h1>Equilibrium Analysis of Vehicle Dynamics<a class="headerlink" href="#equilibrium-analysis-of-vehicle-dynamics" title="Permalink to this headline">¶</a></h1>
-<p>From last chapter of my thesis</p>
-<a class="reference internal image-reference" href="../_images/uconstruction.jpeg"><img alt="../_images/uconstruction.jpeg" class="align-center" src="../_images/uconstruction.jpeg" style="width: 400px;" /></a>
+<span id="car-dynamics"></span><h1>Equilibrium Analysis of Vehicle Dynamics<a class="headerlink" href="#equilibrium-analysis-of-vehicle-dynamics" title="Permalink to this headline">¶</a></h1>
+<p>One question I alwasy had in mind was how do I know if my model is good enough?
+the questions eventually depends on the expectations you have from the model, for example if a kinematic bicycle model is used to model a car then guarantees for the controller which uses the bicycle model are invalidated around those states when slip happens.</p>
+<p>To verify dynamics I developped in <a class="reference internal" href="#car-dynamics"><span class="std std-ref">Equilibrium Analysis of Vehicle Dynamics</span></a> I calculated some slices of equilibrium manifold for using linear and non-linear tire model</p>
+<a class="reference internal image-reference" href="../_images/slice1.png"><img alt="../_images/slice1.png" class="align-center" src="../_images/slice1.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/slice2.png"><img alt="../_images/slice2.png" class="align-center" src="../_images/slice2.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/slice3.png"><img alt="../_images/slice3.png" class="align-center" src="../_images/slice3.png" style="width: 600px;" /></a>
+<p>and eventually results were consistend with <a class="reference external" href="https://arxiv.org/pdf/1112.1530.pdf">this paper</a></p>
+<a class="reference internal image-reference" href="../_images/slice-comp.png"><img alt="../_images/slice-comp.png" class="align-center" src="../_images/slice-comp.png" style="width: 600px;" /></a>
+<p>Equilibrium manifol would give a lot of high level information, for example in first plot one can see that linear tire model can generate over 20 m/s^2 of latheral acceleration where as a nonliner model shows it can generate maximum of 1.6 m/s^2.</p>
+<p>this means, as long as desired trajectories require less than 1.6 m/s^2 then using a linear tire model would be useful however more than that might result in different behaviour between physical (non-linear) and assumed model.</p>
+<p>One should perhaps run these experiments on physical robot and compare the equilibrium manifolds of the physical system to the modeled ones to compare their performance in different areas of state space.</p>
 </div>
 
 

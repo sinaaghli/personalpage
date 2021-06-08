@@ -34,26 +34,4 @@ Runnig some simulations of this ODE gives reasonable trajectories for the vehicl
     :width: 600
     :align: center
 
-I calculated some slices of equilibrium manifold for using linear and non-linear tire model
-
-.. image:: ../media/slice1.png
-    :width: 600
-    :align: center
-
-.. image:: ../media/slice2.png
-    :width: 600
-    :align: center
-
-.. image:: ../media/slice3.png
-    :width: 600
-    :align: center
-
-results were consistend with `this paper <https://arxiv.org/pdf/1112.1530.pdf>`_
-
-.. image:: ../media/slice-comp.png
-    :width: 600
-    :align: center
-
-
-
 You can find a c++ implementation of mentione ODE `here <https://github.com/arpg/spirit/blob/feature/rk4/include/spirit/CarODE.h>`_

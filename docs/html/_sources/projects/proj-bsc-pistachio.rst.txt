@@ -1,8 +1,0 @@
-Vision based Pistachio classification
-=======================================
-
-Vision based Pistachio classification for ultra high speed sorting machine.
-
-.. image:: ../media/uconstruction.jpeg
-    :width: 400
-    :align: center
